@@ -2,7 +2,7 @@
 from django.shortcuts import render
 import random
 
-from .models import Url
+from url.models import Url
 def indexpage(request):
     if request.method == 'GET':
         return render(request, 'index.html')

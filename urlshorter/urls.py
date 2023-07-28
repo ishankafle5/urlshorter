@@ -21,5 +21,5 @@ from . import views
 urlpatterns = [
     path('url-short', views.indexpage),
     path('', views.indexpage),
-    path('<str>', views.shorturl)
+    path('link/<str>', views.shorturl)
 ]
