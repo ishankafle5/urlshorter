@@ -10,7 +10,7 @@
 <body>
     <form action="/url-short" method="post">
         {% csrf_token %}
-        <input type="text" placeholder="Enter a link">
+        <input type="text" name="link" placeholder="Enter a link">
         <button type="sumbit">Summit</button>
     </form>
 </body>

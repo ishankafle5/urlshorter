@@ -15,11 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 from . import views
 # app_name = 'urlshorter'
 urlpatterns = [
-    path('url-short', views.indexpage),
-    path('', views.indexpage),
-    path('link/<str>', views.shorturl)
+    path('',include('url.urls',namespace='urlapp')),
 ]

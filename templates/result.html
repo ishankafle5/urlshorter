@@ -1,1 +1,5 @@
-<a href="{% url 'dateconvert:url''{{short_link}}' %}">{{short_link}}</a>
+{% if short_link %}
+<a href="{{short_link}}">{{short_link}}</a>
+{%else%}
+aayena
+{%endif %}
